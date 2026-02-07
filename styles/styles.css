@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f0f0;
+    min-height: 100vh;
+
+    flex-direction: column;
+}
+
+header {
+    background: #1b1b1b;
+    color: white;
+    padding: calc(1vw + 0.5vw);
+    text-align: left;
+}
+
+header h1 {
+    font-size: calc(16px + 1vw);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: calc(15px + 0.3vw);
+    font-weight: 300;
+}
+
+nav {
+    background: #3d3d3d;
+    padding: calc(16px + 0.3vw);
+    width: 30%;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: calc(14px + 0.2vw);
+    display: block;
+    border-radius: 3px;
+    font-size: calc(15px + 0.2vw);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+nav a:hover {
+    background: #b5b5b5;
+}
+
+main {
+    background: white;
+    padding: calc(24px + 1vw);
+    margin: calc(16px + 0.5vw);
+    margin-left: calc(30% + 1rem);
+    margin-right: calc(16px + 0.5vw);
+    width: calc(70% - 32px);
+    border-radius: 5px;
+    min-height: 100vh;
+}
+
+main h2 {
+    color: #484848;
+    font-size: calc(24px + 0.5vw);
+    margin-bottom: 16px;
+    border-bottom: 3px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+main h3 {
+    color: #5e5e5e;
+    font-size: calc(18px + 0.3vw);
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+
+main h4 {
+    color: #5e5e5e;
+    font-size: calc(16px + 0.2vw);
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+main p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    font-size: calc(15px + 0.2vw);
+}
+
+main ul {
+    margin-left: 32px;
+    margin-bottom: 16px;
+}
+
+main li {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 8px;
+    font-size: calc(15px + 0.2vw);
+}
+
+/* ---------------------------- Footer ----------------------------------- */
+footer {
+    background: #494949;
+    color: white;
+    text-align: center;
+    padding: calc(16px + 0.3vw);
+    clear: both;
+    margin-top: auto;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.intro-section {
+    padding: 16px 0;
+}
+
+.highlights {
+    display: flex;
+    gap: 32px;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+
+.highlight-card {
+    flex: 1;
+    min-width: 250px;
+    color: rgb(22, 22, 22);
+    padding: 24px;
+    border-radius: 5px;
+    background: #f8f9fa;
+    border: 3px inset rgb(240, 240, 240);
+}
+
+.cta-section {
+    background: #f8f9fa;
+    padding: 32px;
+    border-radius: 5px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.education-item,
+.job-item,
+.cert-item,
+.project-item {
+    background: #f8f9fa;
+    padding: 24px;
+    margin-bottom: 32px;
+    border-radius: 5px;
+    border: 3px inset rgb(240, 240, 240);
+}
+
+.date {
+    color: #5e5e5e;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.gpa {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+
+/* ---------------------------- Calculator ---------------------------- */
+.calculator-section {
+    background: #9e9e9e;
+    padding: 32px;
+    border-radius: 5px;
+    margin-top: 48px;
+    color: white;
+    border: 3px inset rgb(240, 240, 240);
+}
+
+.calculator-section h2 {
+    color: white;
+    border: 3px inset rgb(240, 240, 240);
+}
+
+.calculator-section .description {
+    color: white;
+}
+
+.calculator {
+    background: white;
+    padding: 32px;
+    border-radius: 5px;
+    margin-top: 24px;
+}
+
+.calculator-display {
+    background: #464646;
+    padding: 24px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    text-align: right;
+}
+
+.calculator-display h3 {
+    color: white;
+    font-size: calc(22px + 0.5vw);
+    margin: 0;
+}
+
+.calculator-inputs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.calculator-inputs input {
+    flex: 1;
+    min-width: 150px;
+    padding: calc(14px + 0.2vw);
+    font-size: calc(16px + 0.2vw);
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+
+.calculator-inputs input:focus {
+    outline: none;
+    border-color: #9e9e9e;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.calculator-buttons button {
+    padding: calc(16px + 0.3vw);
+    font-size: calc(17px + 0.2vw);
+    font-weight: 600;
+    border: 3px inset rgb(240, 240, 240);
+    border-radius: 3px;
+    background: #9e9e9e;
+    color: white;
+}
+
+.calculator-buttons button:hover {
+    background: #b5b5b5;
+}
+
+.calculator-buttons .clear-btn {
+    grid-column: span 3;
+    background: #bababa;
+}
+
+.calculator-buttons .clear-btn:hover {
+    background: #c8c8c8;
+}
+
+.negative-result {
+    color: #e74c3c !important;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: calc(100% - 32px);
+        margin-left: calc(16px + 0.5vw);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    nav {
+        width: 100%;
+        float: none;
+        padding: 16px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 13px 16px;
+        font-size: 15px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    main {
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 24px;
+    }
+
+    .highlights {
+        flex-direction: column;
+    }
+
+    .calculator-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .calculator-buttons .clear-btn {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav a {
+        padding: 8px 14px;
+        font-size: 14.5px;
+    }
+
+    main {
+        padding: 16px;
+        margin: 8px;
+    }
+
+    main h2 {
+        font-size: 20px;
+    }
+
+    .calculator {
+        padding: 16px;
+    }
+
+    .calculator-inputs {
+        flex-direction: column;
+    }
+
+    .calculator-inputs input {
+        min-width: 100%;
+    }
+}

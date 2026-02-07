@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Projects</h1>
+        <p>Projects Including and Limited to a Calculator</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="projects-content">
+
+            </div>
+            <div class="calculator-section">
+                <h2>JavaScript Calculator</h2>
+                <p class="description">Behold! Vanilla Javascript Calculator</p>
+
+                <div class="calculator">
+                    <div class="calculator-display">
+                        <h3 id="output">0</h3>
+                    </div>
+
+                    <div class="calculator-inputs">
+                        <input type="text" id="first-number">
+                        <input type="text" id="second-number">
+                    </div>
+
+                    <div class="calculator-buttons">
+                        <button onclick="addition()">+</button>
+                        <button onclick="subtraction()">-</button>
+                        <button onclick="multiplication()">*</button>
+                        <button onclick="division()">/</button>
+                        <button onclick="power()">**</button>
+                        <button onclick="clear()" class="clear-btn">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jackson Pine. All rights reserved. | <a href="#credits">Credits</a></p>
+    </footer>
+
+    <script src="../js/calc.js"></script>
+</body>
+
+</html>
